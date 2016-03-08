@@ -1,0 +1,14 @@
+#!/bin/bash -e
+
+# cache downloaded files locally to reduce downloads when
+# testing out box changes.
+
+ROOT=$(cd `dirname $0`; pwd)
+CACHEDIR="${ROOT}/cache"
+
+. ${ROOT}/scripts/includes.sh
+
+download_jdk_rpm
+download_mesos_rpm
+download_vagrant_key
+

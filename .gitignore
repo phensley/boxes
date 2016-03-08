@@ -1,0 +1,8 @@
+*.swp
+*.log
+
+/cache/
+/output/
+/output-virtualbox-iso/
+/packer_cache/
+

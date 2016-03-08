@@ -1,0 +1,8 @@
+#!/bin/bash -xe
+
+echo "generating packer json files.."
+./generate
+
+echo "starting packer.."
+PACKER_LOG=1 PACKER_LOG_PATH=packer.log packer build centos-7.2-java.json
+
